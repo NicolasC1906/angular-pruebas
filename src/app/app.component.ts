@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { url } from 'inspector';
 import { ProductosService } from './services/productos.service';
 
 @Component({
@@ -10,6 +9,7 @@ import { ProductosService } from './services/productos.service';
 })
 export class AppComponent {
   title = 'angular-pruebas';
+  indexes:Array<any> = [];
 
   constructor(private ProductosService: ProductosService) { }
 
@@ -40,8 +40,13 @@ export class AppComponent {
           getProductos[i]["NombreTienda"]
           // console.log("getProductos[i][\"Recursos\"][1][\"url\"]", getProductos[i]["Recursos"][1]["url"]);
           // console.log("getProductos[i][\"Categoria\"]", getProductos[i]["Categoria"]);
-          console.log("getProductos[i][\"NombreTienda\"]", getProductos[i]["NombreTienda"]);
+          // console.log("getProductos[i][\"NombreTienda\"]", getProductos[i]["NombreTienda"]);
+          this.indexes.push(i);
+
+          // console.log("indexes", this.indexes);
+          
         }
+        
       })   
       
   }
