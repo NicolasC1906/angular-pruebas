@@ -12,6 +12,6 @@ Exportamos el endPoint de la APIREST de Firebase
 =============================================*/
 export let Api = {
 
-	url: 'https://secure-atoll-67302.herokuapp.com/api/productos' //YOUR FIREBASE ENDPOINT
+	url: 'https://secure-atoll-67302.herokuapp.com/api/' //YOUR FIREBASE ENDPOINT
 
 }

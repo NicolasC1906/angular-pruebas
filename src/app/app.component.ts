@@ -32,7 +32,7 @@ export class AppComponent {
             "NombreTienda": resp[i].NombreTienda,
             
           })
-        //  console.log("getProductos", getProductos);
+        //console.log("getProductos", getProductos);
         }   
         for(i in getProductos){
           getProductos[i]["Recursos"][1]["url"]
@@ -43,7 +43,7 @@ export class AppComponent {
           // console.log("getProductos[i][\"NombreTienda\"]", getProductos[i]["NombreTienda"]);
           this.indexes.push(i);
 
-          // console.log("indexes", this.indexes);
+          //console.log("indexes", this.indexes);
           
         }
         
